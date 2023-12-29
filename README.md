@@ -1,2 +1,2 @@
 # Note Application for multiple Users with Angular CLI and .ASPNET
-# Database Is SSMS and i have do it with Migration
+ Database has been  done with  Microsoft Sql  and I have create it with Migration
