@@ -1,0 +1,41 @@
+
+
+<div class="container m-0 p-0 ">
+    <div class="">
+        <form [formGroup]="editForm">
+            <div class="card shadow">
+                <div class="card-header text-center">
+                    <span class="fs-3"> Edit Note</span>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12 mt-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Subject</mat-label>
+                                <input formControlName="subject" matInput required>
+                            </mat-form-field>
+                        </div>
+                        <div class="col-md-12 mt-2">
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>text</mat-label>
+                                <textarea matInput cdkTextareaAutosize  formControlName="text" id="text"  > </textarea>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button [disabled]="editForm.invalid" class=" btn btn-primary btn-lg m-2" (click)="edit()">
+                        Create
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+
+</div>
+
+
+
+
